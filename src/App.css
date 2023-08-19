@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  background-color: #0C356A;
+}
+:root{
+  --bg-color:#0C356A;
+}
+.board{
+  margin: 20px auto;
+  width: 500px;
+  height: 500px;
+  background-color: #0C356A;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  border-collapse: collapse;
+}
+.cell{
+border: 2px solid 40F8FF;
+background-color: #279EFF;
+cursor: pointer;
+}
+.cell {
+  font-size: 44px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Open Sans', sans-serif;
+}
