@@ -15,7 +15,7 @@ function App() {
     player1 : 0,
     player2 : 0,
   })
-  const[buttonText,setButtonText] = useState("Start")
+  const[buttonText,setButtonText] = useState("Start Game")
   const handleClick = (index) => {
 
     if (!board[index] && !winner && isPlaying) {
@@ -84,7 +84,7 @@ function startGame(){
     </div>
   )
 
-  const winnerMessage = winner ? `Il giocatore ${winner} ha vinto!` : board.every((cell) => cell) ? 'Pareggio!' : isPlaying ? ' ' : 'Start Game';
+  const winnerMessage = winner ? `Il giocatore ${winner} ha vinto!` : board.every((cell) => cell) ? 'Pareggio!' : " ";
   const showIfIsWinner = winner ? 'show' : board.every((cell) => cell) && 'show ';
   const hideIfIsPlaying = isPlaying && 'hide'
   return (
